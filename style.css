@@ -140,7 +140,7 @@ p { margin: 0 0 1em; }
   overflow: hidden; background: linear-gradient(160deg, var(--sage), var(--sage-dark));
   box-shadow: var(--shadow);
 }
-.photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
 .badge {
   position: absolute; left: -24px; bottom: 36px;
   background: #fff; padding: 14px 18px; border-radius: 16px;
@@ -154,6 +154,8 @@ p { margin: 0 0 1em; }
 
 /* Sobre */
 .about { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; align-items: start; }
+.about__photo { margin: 28px 0 0; max-width: 360px; aspect-ratio: 4 / 5; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--sage-light); }
+.about__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .about__reg { padding-top: 14px; border-top: 1px solid rgba(0,0,0,.12); font-size: .92rem; color: var(--muted); }
 
 /* Comparativo */
